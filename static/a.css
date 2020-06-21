@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Centuri Gothic;}
+
+body{overflow-y: scroll; 
+    overflow-x: scroll;
+    }
+body {
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../static/tt.png');
+    background-position: right top;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+h1 {
+    position: absolute;
+    top: 60px;
+    left: 700px;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.form-group label{
+    position: relative;
+    top: 392px;
+    left: 500px;
+}
+.container audio{
+    position: relative;
+    top: 180px;
+    left: 570px;
+}
+.form-control{
+    position: relative;
+    top: 395px;
+    left: 500px;
+    font-weight: bolder;
+    color: bisque;
+    font-size: medium;
+}
+.btn-default{
+    position: relative;
+    top: 400px;
+    left: 650px;
+    font-weight: bolder;
+    color: brown;
+    font-size: medium;
+}
+label{
+    font-weight: bolder;
+    color: bisque;
+    font-size: medium;
+}
+
+.pdf{
+    position: relative;
+    top: 450px;
+    left: 390px;
+    overflow-x: hidden;
+}

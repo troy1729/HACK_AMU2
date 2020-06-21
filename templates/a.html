@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Cluster the viral Mutants
+    </title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "a.css" %}">
+</head>
+
+<body>
+    <h1>
+        Cluster The Viral Mutants
+    </h1>
+    <div class="container">
+        <form action="/external/" method="post" enctype="multipart/form-data" name="upload" id="upload" role="form">
+        {% csrf_token %}
+            <div class="form-group">
+            <label for="file">FILE TO UPLOAD:</label>
+            <input name="file" type="file" class="form-control" id="input" size="30" required/>
+            </div>
+            <input name="Submit" type="submit" class="btn-default" id="submit" value="Upload File!" />
+        </form>
+    </div>
+    {% if data %} {{data | safe}} {% endif %}
+            <br><br> {% if raw_url or edit_url %}
+            <span>
+<div class="pdf">
+  REPORT:
+  <embed src="/media/report1.pdf" width="500px" height="575px"/>
+</div>
+</span>
+            <hr> {% endif %}
+</body>
+</html>
